@@ -1,0 +1,658 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1,7em;
+}
+#icon {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+a{
+    text-decoration: none;
+}
+
+.bg-light{
+    color: white;
+    font-size: x-large;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    padding: 0 20px;
+    max-width: 1100px;
+
+}
+
+.search-input{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*navbar*/
+
+#navbar a{
+    color: black;
+}
+
+
+#navbar ul{
+    list-style: none;
+}
+
+#navbar ul li{
+    float: left;
+}
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar ul li a:hover{
+    background-color: #444;
+    color: white;
+}
+
+#navbar ul{
+    float: right;
+}
+
+.btn{
+    margin-top: 30px;
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    background-color: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 140px;
+}
+p {
+    margin: 10px 0;
+}
+.btn-light{
+    background: #f4f4f4;
+    color: #333;
+}
+.btn:hover{
+    background-color: #444;
+    color: #f8f8f8;
+}
+
+
+
+/*showcase*/
+#showcase{
+    background: url('../images/showcase\ 3.jpg') no-repeat center center/cover;
+    height: 600px;
+}
+
+#showcase .showcase-content{
+    color: #fff;
+    text-align: center;
+    padding-top: 300px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+}
+
+/* container-box */
+
+.container-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-left: 500px;
+    width: 800px;
+
+}
+
+.box img{
+    width: 250px;
+    height: 250px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.box-story{
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.box-events img{
+    width: 250px;
+    height: 250px;
+}
+
+.box-events{
+    display: flex;
+  flex-direction: row;
+}
+
+.event{
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+.text-story{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 15px;
+}
+
+.text{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 15px;
+}
+
+.container-reviews{
+    padding-top: 90px;
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+   border: 2px solid #333;  
+   display: inline-flex;
+}
+.rating{
+    color: rgb(234, 197, 32);
+}
+
+.box-review img{
+    width: 150px;
+    height: 150px;
+}
+
+.box-review{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    width: 800px;
+}
+
+.review-1{
+    display: flex;
+    flex-direction: row;
+    padding-right: 80px;
+}
+
+.review-2{
+    display: flex;
+    flex-direction: row;
+    padding-right: 80px;
+}
+
+/* footer*/
+.contact-info{
+    display: flex;
+    width: 100%;
+    height: 150px;
+  justify-content: space-around;
+    background-color: #444;
+    align-items: center;
+    color: #f4f4f4;
+}
+.contact-info ul li{
+    list-style: none;
+}
+
+.text.info{
+    display: flex;
+    flex-direction: column;
+}
+
+/* history */
+
+img{
+    width: 900px;
+    height: 400px;
+}
+
+.flexbox-slideshow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-left: 600px;
+    width: 800px;
+    padding-top: 60px;
+}
+
+.text-slideshow{
+    padding-top: 30px;
+}
+
+.slideshow-geology{
+    padding-top: 50px;
+}
+
+.heading-timeline{
+    padding-left: 230px;
+   padding-top: 80px;
+}
+
+
+.flexbox-timeline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-left: 600px;
+    width: 800px;
+    padding-top: 40px;
+}
+
+.timeline-intro img{
+    width: 200px;
+    height: 200px;
+}
+
+.timeline-intro{
+    display: flex;
+    flex-direction: row;
+}
+
+.timeline{
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+}
+ 
+h2{
+    padding-bottom: 20px;
+}
+
+
+.timeline-history{
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+.first-timeline h3{
+    padding-top: 20px;
+}
+
+.second-timeline{
+    padding-top: 70px;
+}
+
+.second-timeline h3{ 
+    padding-top: 20px;
+}
+
+.third-timeline{
+    padding-top: 70px;
+}
+
+.third-timeline h3{
+    padding-top: 20px;
+}
+
+.fourth-timeline{
+    padding-top: 70px;
+}
+.fourth-timeline h3{
+    padding-top: 20px;
+}
+
+.fourth-timeline{
+    padding-bottom: 100px;
+}
+
+/* sights/museums/restaurants */
+
+.showcase-sights{
+    width: 100vw;
+}
+
+.showcase-sights img{
+    width: 100%; 
+    height: 600px;
+}
+.top-box{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 500px;
+
+}
+
+.flexbox-sights img{
+    width: 250px;
+    height: 250px;
+}
+
+.flexbox-sights{
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.text-sights{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.sights{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+    width: 900px;
+}
+
+
+/*monasteries*/
+
+.slideshow-monasteries{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding-left: 600px;
+    width: 800px;
+    padding-top: 60px;
+}
+
+
+.first-monastery h3{
+    padding-top: 20px;
+}
+
+.second-monastery{
+    padding-top: 70px;
+}
+
+.second-monastery h3{ 
+    padding-top: 20px;
+}
+
+.third-monastery{
+    padding-top: 70px;
+}
+
+.third-monastery h3{
+    padding-top: 20px;
+}
+
+.fourth-monastery{
+    padding-top: 70px;
+}
+.fourth-monastery h3{
+    padding-top: 20px;
+}
+
+.fifth-monastery{
+    padding-top: 70px;
+}
+
+.fifth-monastery h3{
+    padding-top: 20px;
+}
+
+.sixth-monastery{
+    padding-top: 70px;
+}
+
+.sixth-monastery h3{
+    padding-top: 20px;
+}
+
+/*museums*/
+
+.flexbox-museums img{
+    width: 250px;
+    height: 250px;
+} 
+
+.flexbox-museums{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 90px;
+}
+
+.text-museum{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 20px;
+    width: 800px;
+}
+
+.museum{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+/* restaurants */
+
+.flexbox-restaurants img{
+    width: 150px;
+    height: 150px;
+} 
+
+.flexbox-restaurants{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 90px;
+}
+
+.text-restaurant{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.restaurant{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+.maps{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 90px;
+}
+
+.iframe{
+    padding-left: 80px;
+    padding-top: 90px;
+    height: 1070px;
+}
+
+/* events/activities */
+
+.showcase-events{
+    width: 100vw;
+}
+
+.showcase-events img{
+    width: 100%;
+    height: 600px;
+}
+
+.container-event img{
+    width: 400px;
+    height: 200px;
+}
+.container-event{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    padding-top: 50px;
+}
+
+.flexbox-intro{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.text-event{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-top: 10px;
+}
+.box-event{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.flexbox-events{
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    padding-top: 100px;
+}
+
+.flexbox-events img{
+    width: 400px;
+    height: 200px;
+}
+
+
+.flexbox-activities img{
+    width: 200px;
+    height: 200px;
+}
+
+.flexbox-activities{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-top: 50px;
+    width: 700px;
+}
+
+.activity{
+    padding-right: 150px;
+}
+
+.activity-ride img{
+    width: 200px;
+    height: 200px;
+    padding-left: 20px;
+}
+
+.activity-ride{
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    padding-top: 30px;
+}
+
+
+.text-ride{
+    padding-left: 15px;
+    padding-top: 40px;
+  
+}
+
+.big-box{
+    padding-bottom: 60px;
+}
+
+/* contact*/
+
+.paragraph-intro{
+    padding-left: 60px;
+}
+
+.container-contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.center-form{
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    padding-left: 50px;
+}
+
+.contact{
+    padding-top: 30px;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-top: 40px;
+    width: 1200px;
+}
+
+.name{
+    border: 2px solid #333;  
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.email{
+    border: 2px solid #333;  
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+
+.message{
+    padding-bottom: 50px;
+    border: 2px solid #333;  
+}
+
+.button{
+   padding-left: 550px;
+}
+
+.info{
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+}
+
+.info h3{
+    border: 2px solid #333;  
+   display: inline-flex;
+}
+
+.text-faq{
+    padding-top: 20px;
+}
