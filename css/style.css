@@ -7,11 +7,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1,7em;
 }
-#icon {
-    position: absolute;
-    margin-left: 200px;
-    margin-top: 20px;
-}
+
 a{
     text-decoration: none;
 }
@@ -21,71 +17,57 @@ a{
     font-size: x-large;
 }
 
-a{
-    text-decoration: none;
+.button{
+    padding-top: 25px;
 }
 
-.container{
-    padding: 0 20px;
-    max-width: 1100px;
-
-}
-
-.search-input{
-    display: flex;
-    flex-direction: row-reverse;
-}
 
 /*navbar*/
 
+
 #navbar a{
     color: black;
+    text-decoration: none;
 }
 
 
-#navbar ul{
-    list-style: none;
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    padding-left: 400px;
+    padding-bottom: 40px;
+    padding-top: 30px;
+    height: 50px;
+    position: absolute;
+    width: auto;
 }
 
-#navbar ul li{
-    float: left;
-}
-#navbar ul li a{
-    display: block;
-    padding: 20px;
-    text-align: center;
-}
-
-#navbar ul li a:hover{
-    background-color: #444;
+#navbar a:hover{
+    background-color: #1a311ed9;
     color: white;
 }
 
-#navbar ul{
-    float: right;
-}
 
-.btn{
-    margin-top: 30px;
+.container a{
     display: inline-block;
-    font-size: 18px;
-    color: white;
-    background-color: #333;
     padding: 13px 20px;
     border: none;
     cursor: pointer;
-    border-radius: 10px;
-    width: 140px;
 }
+
+
 p {
     margin: 10px 0;
 }
 .btn-light{
     background: #f4f4f4;
-    color: #333;
+    color: #1a311ed9;
+    padding: 15px 20px;
 }
 .btn:hover{
-    background-color: #444;
+    background-color: #1a311ed9;
     color: #f8f8f8;
 }
 
@@ -180,8 +162,12 @@ p {
 }
 
 .box-review img{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
+}
+
+.text-review{
+    padding-left: 20px;
 }
 
 .box-review{
@@ -293,7 +279,7 @@ h2{
     padding-top: 70px;
 }
 
-.first-timeline h3{
+#first-timeline h3{
     padding-top: 20px;
 }
 
@@ -337,11 +323,8 @@ h2{
 .top-box{
     display: flex;
     flex-direction: column;
-    width: 900px;
-    justify-content: center;
-    align-items: center;
-    padding-left: 500px;
-
+    width: 800px;
+    padding-left: 200px;
 }
 
 .flexbox-sights img{
@@ -446,10 +429,16 @@ h2{
     flex-direction: column;
     padding-left: 15px;
     padding-top: 20px;
-    width: 800px;
+    width: 500px;
 }
 
 .museum{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
+#museum{
     display: flex;
     flex-direction: row;
     padding-bottom: 50px;
@@ -474,6 +463,7 @@ h2{
     flex-direction: column;
     padding-left: 15px;
     padding-top: 20px;
+    width: 300px;
 }
 
 .restaurant{
@@ -482,16 +472,21 @@ h2{
     padding-bottom: 50px;
 }
 
+#restaurant{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+}
+
 .maps{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding-bottom: 90px;
 }
 
 .iframe{
-    padding-left: 80px;
+    padding-left: 0px;
+    padding-right: 50px;
     padding-top: 90px;
     height: 1070px;
 }
@@ -514,8 +509,9 @@ h2{
 .container-event{
     display: flex;
     flex-direction: column;
-    width: 900px;
+    width: 1000px;
     padding-top: 50px;
+    padding-left: 20px;
 }
 
 .flexbox-intro{
@@ -537,25 +533,25 @@ h2{
     padding-bottom: 30px;
 }
 
-.flexbox-events{
+#flexbox-events{
     display: flex;
     flex-direction: column;
     width: 900px;
     padding-top: 100px;
 }
 
-.flexbox-events img{
+#flexbox-events img{
     width: 400px;
     height: 200px;
 }
 
 
-.flexbox-activities img{
+#flexbox-activities img{
     width: 200px;
     height: 200px;
 }
 
-.flexbox-activities{
+#flexbox-activities{
     display: flex;
     flex-direction: row;
     padding-left: 20px;
@@ -638,8 +634,9 @@ h2{
     border: 2px solid #333;  
 }
 
-.button{
+.button-send{
    padding-left: 550px;
+   padding-top: 30px;
 }
 
 .info{
@@ -656,3 +653,7 @@ h2{
 .text-faq{
     padding-top: 20px;
 }
+
+
+
+
