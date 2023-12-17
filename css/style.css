@@ -283,30 +283,30 @@ h2{
     padding-top: 20px;
 }
 
-.second-timeline{
+#second-timeline{
     padding-top: 70px;
 }
 
-.second-timeline h3{ 
+#second-timeline h3{ 
     padding-top: 20px;
 }
 
-.third-timeline{
+#third-timeline{
     padding-top: 70px;
 }
 
-.third-timeline h3{
+#third-timeline h3{
     padding-top: 20px;
 }
 
-.fourth-timeline{
+#fourth-timeline{
     padding-top: 70px;
 }
-.fourth-timeline h3{
+#fourth-timeline h3{
     padding-top: 20px;
 }
 
-.fourth-timeline{
+#fourth-timeline{
     padding-bottom: 100px;
 }
 
