@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1,7em;
 }
 
@@ -24,6 +24,10 @@ a{
 
 /*navbar*/
 
+#navbar{
+     background-color: #39593c82;
+
+}
 
 #navbar a{
     color: black;
@@ -33,19 +37,18 @@ a{
 
 .container{
     display: flex;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
     align-items: center;
     width: 100vw;
-    padding-left: 400px;
-    padding-bottom: 40px;
+    padding-left: 450px;
+    padding-bottom: 30px;
     padding-top: 30px;
-    height: 50px;
-    position: absolute;
+    height: 30px;
     width: auto;
 }
 
 #navbar a:hover{
-    background-color: #1a311ed9;
+    background-color: #444444a9;
     color: white;
 }
 
@@ -67,7 +70,7 @@ p {
     padding: 15px 20px;
 }
 .btn:hover{
-    background-color: #1a311ed9;
+    background-color: #444444a9;
     color: #f8f8f8;
 }
 
@@ -82,8 +85,8 @@ p {
 #showcase .showcase-content{
     color: #fff;
     text-align: center;
-    padding-top: 300px;
-    font-family: 'Times New Roman', Times, serif;
+    padding-top: 250px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: x-large;
 }
 
@@ -101,8 +104,8 @@ p {
 }
 
 .box img{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
 }
 
 .box{
@@ -118,13 +121,15 @@ p {
 }
 
 .box-events img{
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 300px;
 }
 
 .box-events{
     display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  padding-top: 80px;
 }
 
 .event{
@@ -137,7 +142,10 @@ p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-left: 15px;
+    padding-left: 80px;
+    width: 600px;
+    padding-top: 20px;
+
 }
 
 .text{
@@ -147,6 +155,24 @@ p {
     padding-top: 15px;
 }
 
+.top-museum{
+    display: flex;
+    padding-left: 300px;
+    padding-top: 70px;
+}
+
+.top-heading{
+    padding-top: 70px;
+}
+
+.top-museum img{
+    width: 200px;
+    height: 300px;
+}
+
+.geology{
+    padding-top: 80px;
+}
 .container-reviews{
     padding-top: 90px;
 }
@@ -162,8 +188,8 @@ p {
 }
 
 .box-review img{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 300px;
 }
 
 .text-review{
@@ -172,7 +198,7 @@ p {
 
 .box-review{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding-bottom: 50px;
     padding-top: 50px;
     width: 800px;
@@ -196,7 +222,7 @@ p {
     width: 100%;
     height: 150px;
   justify-content: space-around;
-    background-color: #444;
+    background-color: #39593c89;
     align-items: center;
     color: #f4f4f4;
 }
@@ -212,13 +238,20 @@ p {
 /* history */
 
 img{
-    width: 900px;
-    height: 400px;
+    width: 300px;
+    height: 500px;
 }
 
+.slideshow-intro{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.slideshow-intro img{
+    width: 500px;
+    padding-left: 50px;
+}
 .flexbox-slideshow{
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0;
@@ -229,6 +262,8 @@ img{
 
 .text-slideshow{
     padding-top: 30px;
+    padding-right: 50px;
+    width: 500px;
 }
 
 .slideshow-geology{
@@ -250,6 +285,7 @@ img{
     padding-left: 600px;
     width: 800px;
     padding-top: 40px;
+    padding-bottom: 60px;
 }
 
 .timeline-intro img{
@@ -273,42 +309,90 @@ h2{
 }
 
 
-.timeline-history{
+/*.timeline-history{
     display: flex;
     flex-direction: column;
-    padding-top: 70px;
+    padding-top: 100px;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}*/
+
+#first-timeline{
+    /*display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;*/
+    padding-top: 100px;
+    background: url('../images/Green-Desktop-Wallpaper-Hd-Landscape-Mountain-Lake-grass-sky-clouds-1920x1080.jpg')no-repeat center center/cover;
+    height: 400px;
+    color: white;
+    padding-left: 100px;
 }
 
-#first-timeline h3{
-    padding-top: 20px;
+
+.text-timeline{
+    width: 600px;
+    padding-right: 50px;
+    background-color: rgba(56, 54, 54, 0.571);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
 }
+
 
 #second-timeline{
-    padding-top: 70px;
+    /*display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;*/
+    padding-top: 100px;
+    height: 400px;
+    color: white;
+    background: url('../images/meteora-gallery-05-min-55a68742.jpeg')no-repeat center center/cover;
+    padding-left: 800px;
 }
 
-#second-timeline h3{ 
-    padding-top: 20px;
+
+#second-timeline{
+    padding-top: 30px;
 }
+
 
 #third-timeline{
-    padding-top: 70px;
+   /*display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;*/
+    padding-top: 100px;
+    background: url('../images/20181215-DSC00798-Meteorabynight-1024x472.jpg')no-repeat center center/cover;
+    height: 500px;
+    padding-left: 100px;
+    color: white;
 }
 
-#third-timeline h3{
-    padding-top: 20px;
+
+#third-timeline{
+    padding-top: 30px;
 }
 
 #fourth-timeline{
-    padding-top: 70px;
-}
-#fourth-timeline h3{
-    padding-top: 20px;
+    /*display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;*/
+    padding-top: 100px;
+    background: url('../images/2.jpg') no-repeat center center/cover;
+    height: 500px;
+    color: white;
+    padding-left: 800px;
 }
 
+
 #fourth-timeline{
-    padding-bottom: 100px;
+    padding-top: 30px;
 }
+
 
 /* sights/museums/restaurants */
 
@@ -588,10 +672,6 @@ h2{
 }
 
 /* contact*/
-
-.paragraph-intro{
-    padding-left: 60px;
-}
 
 .container-contact{
     display: flex;
