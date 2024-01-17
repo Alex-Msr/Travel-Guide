@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1,7em;
@@ -120,6 +121,11 @@ p {
     padding-bottom: 50px;
 }
 
+.box-story img{
+    height: 150px;
+    width: 150px;
+}
+
 .box-events img{
     width: 150px;
     height: 300px;
@@ -158,7 +164,6 @@ p {
 .top-museum{
     display: flex;
     padding-left: 300px;
-    padding-top: 70px;
 }
 
 .top-heading{
@@ -167,29 +172,22 @@ p {
 
 .top-museum img{
     width: 200px;
-    height: 300px;
+    height: 200px;
 }
 
 .geology{
-    padding-top: 80px;
+    padding-top: 50px;
+    width: 800px;
 }
 .container-reviews{
     padding-top: 90px;
-}
-
-.heading{
-    display: flex;
-    flex-direction: row;
-   border: 2px solid #333;  
-   display: inline-flex;
-}
-.rating{
-    color: rgb(234, 197, 32);
+    padding-bottom: 40px;
 }
 
 .box-review img{
     width: 150px;
-    height: 300px;
+    height: 200px;
+    padding-left: 20px;
 }
 
 .text-review{
@@ -199,9 +197,10 @@ p {
 .box-review{
     display: flex;
     flex-direction: row;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     width: 800px;
+    background-color: rgba(128, 128, 128, 0.721);
 }
 
 .review-1{
@@ -266,9 +265,6 @@ img{
     width: 500px;
 }
 
-.slideshow-geology{
-    padding-top: 50px;
-}
 
 .heading-timeline{
     padding-left: 230px;
