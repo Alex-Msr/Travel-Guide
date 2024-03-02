@@ -7,16 +7,17 @@
     <title>History</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/fc6b22f201.js" crossorigin="anonymous"></script>
+    <script src="carousel.js" defer></script>
 </head>
 
 <body>
     <header>
         <nav id="navbar">
+            <div id="icon"><a href="index.html"><img src="images/meteora.png"> </a>
+            </div>
             <div class="container">
-                <div id="icon"><a href="index.html"><i class="fa-solid fa-mountain"></i></a>
-                </div>
                 <a href="index.html">Home</a>
-                <a href="history.html">History</a>
+                <div class="history"><a href="history.html">History</a></div>
                 <a href="exhibits.html">Exhibits</a>
                 <a href="events.html">Events</a>
                 <a href="contact.html">Contact</a>
@@ -26,22 +27,48 @@
     </header>
     <!--slideshow with j.s-->
     <section>
+
+        <h1 class="history-tab">History</h1>
         <div class="flexbox-slideshow">
             <div class="slideshow-intro">
-                <img src="images/slideshow-position.jpg">
-                <!-- slideshow -->
+                <img class="myImage firstImage" src="images/carousel image1.jpg" alt="image-1">
+                <img class="myImage" src="images/carousel image2.jpg" alt="image-2">
+                <img class="myImage" src="images/carousel image3.jpg" alt="image-3">
+                <img class="myImage" src="images/carousel image 4.jpg" alt="image-4">
+                <img class="myImage" src="images/carousel image5.jpg" alt="image-5">
+                <img class="myImage" src="images/carousel image6.jpg" alt="image-6">
                 <div class="text-slideshow">
-                    <h1>History</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis, odit suscipit? Alias
-                        consequuntur, reprehenderit unde nobis ducimus animi voluptas? Labore saepe dolores doloribus
-                        sed, eius ea, commodi fuga fugit omnis asperiores voluptatem nihil perspiciatis numquam possimus
-                        dicta, adipisci voluptatibus. Unde ullam perferendis esse earum, aspernatur vitae expedita quis
-                        in tenetur.</p>
+
+                    <h1>Protected Heritage</h1>
+                    <p> Meteora, a UNESCO World Heritage site, is a place where nature's geological wonders intertwine
+                        with a rich tapestry of history and spirituality. The name "Meteora" itself means "suspended in
+                        the air" or "in the heavens," perfectly describing the gravity-defying monasteries that have
+                        captured the imagination of visitors for centuries.</p>
                 </div>
             </div>
 
+
+        </div>
+
+        <!-- <div class="buttons">
+            <button onclick="nextSlide(-1)"><i class="fa-solid fa-angles-left"></i></button>
+            <button onclick="nextSlide(1)"><i class="fa-solid fa-angles-right"></i></button>
+            <button onclick="stopSlide()"><i class="fa-solid fa-stop"></i></button>
+            <button onclick="playSlide()"><i class="fa-solid fa-play"></i></button>
+        </div> -->
+
+
+        <div id="indicator">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
         </div>
     </section>
+
+
     <section>
         <div class="heading-timeline">
             <h2>Timeline</h2>
@@ -49,27 +76,27 @@
         <div class="flexbox-timeline">
             <div class="timeline-intro">
                 <div class="timeline">
-                    <img src="images/Placeholder.png">
-                    <h3>Lorem ipsum dolor sit.</h3>
-                    <div class="button"><a href="#first-timeline" class="btn btn-light">Learn More</a></div>
+                    <img src="images/old photo.jpeg">
+                    <h3>950AC - 970AC</h3>
+                    <div class="button time"><a href="#first-timeline" class="btn btn-light">Learn More</a></div>
                 </div>
 
                 <div class="timeline">
-                    <img src="images/Placeholder.png">
-                    <h3>Lorem ipsum dolor sit.</h3>
-                    <div class="button"><a href="#second-timeline" class="btn btn-light">Learn More</a></div>
+                    <img src="images/old photo 2.jpeg">
+                    <h3>1000AC - 1160AC</h3>
+                    <div class="button time"><a href="#second-timeline" class="btn btn-light">Learn More</a></div>
                 </div>
 
                 <div class="timeline">
-                    <img src="images/Placeholder.png">
-                    <h3>Lorem ipsum dolor sit.</h3>
-                    <div class="button"><a href="#third-timeline" class="btn btn-light">Learn More</a></div>
+                    <img src="images/old photo 3.jpeg">
+                    <h3>1340AC - 1350AC</h3>
+                    <div class="button time"><a href="#third-timeline" class="btn btn-light">Learn More</a></div>
                 </div>
 
                 <div class="timeline">
-                    <img src="images/Placeholder.png">
-                    <h3>Lorem ipsum dolor sit.</h3>
-                    <div class="button"><a href="#fourth-timeline" class="btn btn-light">Learn More</a></div>
+                    <img src="images/old photo 4.jpeg">
+                    <h3>1920AC - NOW</h3>
+                    <div class="button time"><a href="#fourth-timeline" class="btn btn-light">Learn More</a></div>
                 </div>
             </div>
 
@@ -79,40 +106,60 @@
         <div id="first-timeline">
             <div class="text-timeline">
                 <h3>950AC - 970AC</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolore harum sint quia iusto ea
-                    atque assumenda voluptatibus nobis! Error blanditiis voluptate quas qui deleniti. Mollitia
-                    laceat ab ad ducimus dolorem officia ratione doloremque obcaecati perferendis officiis tenetur
-                    voluptas neque nihil beatae fuga, minus, quos veritatis soluta reiciendis sequi dolorum?</p>
+                <p>In the year 950 AC, a young monk named Elias found himself drawn to the remote and rugged landscapes
+                    surrounding the Pindus Mountains in Greece. Seeking solitude and a deeper connection with the
+                    divine, Elias embarked on a solitary pilgrimage, guided only by his unwavering faith and a vision of
+                    a sacred place. As he ventured deeper into the untouched wilderness, Elias stumbled upon a hidden
+                    valley dominated by towering rock formations. The cliffs seemed to reach for the heavens, creating
+                    an otherworldly atmosphere. Intrigued by the mystical aura of the place, Elias believed he had
+                    discovered a sacred sanctuary. By the year 970 AC, the first Meteora monastery was complete—a
+                    testament to the resilience of human spirit and the divine guidance that Elias and his community
+                    believed had led them to this extraordinary place.</p>
             </div>
         </div>
 
         <div id="second-timeline">
             <div class="text-timeline">
                 <h3>1000AC - 1160AC</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolore harum sint quia iusto ea
-                    atque assumenda voluptatibus nobis! Error blanditiis voluptate quas qui deleniti. Mollitia
-                    placeat ab ad ducimus dolorem officia ratione doloremque obcaecati perferendis officiis tenetur
-                    voluptas neque nihil beatae fuga, minus, quos veritatis soluta reiciendis sequi dolorum?</p>
+                <p>In the year 1000 AC, Meteora's first monastery, perched atop a towering rock pillar, stood as a
+                    testament to the unwavering devotion of its founders. The community of monks, inspired by the vision
+                    of Elias, had flourished, and the sacred haven became a beacon of spirituality in the Byzantine
+                    Empire.As news of the miraculous monastery spread, pilgrims from far and wide embarked on arduous
+                    journeys to experience the divine energy that seemed to emanate from the rocky spires. In 1160 AC,
+                    as the conflict subsided, the monastic community undertook a period of restoration and expansion.
+                    The original Monastery of the Ascension was now joined by others, including the Monastery of St.
+                    Nicholas and the Monastery of Varlaam, each contributing to the unique tapestry of Meteora's
+                    history.</p>
             </div>
         </div>
 
         <div id="third-timeline">
             <div class="text-timeline">
                 <h3>1340AC - 1350AC</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolore harum sint quia iusto ea
-                    atque assumenda voluptatibus nobis! Error blanditiis voluptate quas qui deleniti. Mollitia
-                    placeat ab ad ducimus dolorem officia ratione doloremque obcaecati perferendis officiis tenetur
-                    voluptas neque nihil beatae fuga, minus, quos veritatis soluta reiciendis sequi dolorum?</p>
+                <p>n the year 1340 AC, Meteora, nestled in the heart of Thessaly, Greece, witnessed a period of profound
+                    transformation. The monasteries, perched high on their majestic rock pillars, had become bastions of
+                    Byzantine culture and spirituality. The echoes of prayers and the soft rustling of monks' robes
+                    blended harmoniously with the wind that swept through the towering cliffs.In 1350 AC, the inevitable
+                    clash between the Byzantines and the Ottoman Turks reached a critical juncture. Meteora, situated on
+                    the fringes of the conflict, faced the imminent threat of invasion. Damian, recognizing the need to
+                    safeguard both the spiritual legacy and the physical safety of the community, embarked on a journey
+                    to negotiate with the Ottoman forces.</p>
             </div>
         </div>
 
         <div id="fourth-timeline">
             <div class="text-timeline">
                 <h3>1920AC - NOW</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae dolore harum sint quia iusto ea
-                    atque assumenda voluptatibus nobis! Error blanditiis voluptate quas qui deleniti. Mollitia
-                    placeat ab ad ducimus dolorem officia ratione doloremque obcaecati perferendis officiis tenetur
-                    voluptas neque nihil beatae fuga, minus, quos veritatis soluta reiciendis sequi dolorum?</p>
+                <p>In the early 20th century, Meteora, a place where the divine met the earthly, underwent a new chapter
+                    in its rich history. The monasteries, with their ancient walls and timeless rituals, stood as
+                    witnesses to the unfolding changes in the world. In 1920, as Greece emerged from the turmoil of the
+                    First World War, Meteora faced a different kind of challenge. The monastic community, resilient as
+                    ever, navigated the shifting political landscape and societal changes that accompanied the birth of
+                    the modern Greek state. Today, Meteora continues to stand as a living testament to the endurance of
+                    faith, culture, and heritage. The monasteries, though touched by the passage of time, retain their
+                    spiritual significance. Visitors from across the globe embark on a journey to experience the
+                    mystical allure of Meteora, where ancient history meets the modern world, and the sacred cliffs
+                    continue to whisper tales of resilience and reverence.</p>
             </div>
         </div>
 
@@ -123,37 +170,41 @@
 
     <footer>
         <div class="contact-info">
-            <div class="text-info">
-                <h3>Lorem ipsum</h3>
-                <ul>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                </ul>
+
+            <div class="logo"><a href="index.html"><img src="images/meteora 2.png"> </a>
             </div>
             <div class="text-info">
-                <h3>Lorem ipsum </h3>
+                <h3>Greece</h3>
                 <ul>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                </ul>
-            </div>
-            <div class="text-info">
-                <h3>Lorem ipsum</h3>
-                <ul>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum.</li>
+                    <li>info@travel-guide.gr</li>
+                    <li>+30 210245678</li>
+                    <li>Dionisou 4 ST., Athens</li>
+                    <li>p/c: 13571 Greece</li>
                 </ul>
             </div>
 
+            <div class="text-info">
+                <h3>Social Media</h3>
+                <ul>
+                    <li class="facebook"><i class="fa-brands fa-square-facebook"></i>Facebook</li>
+                    <li class="instagram"><i class="fa-brands fa-square-instagram"></i>Instagram</li>
+                    <li class="twitter"><i class="fa-brands fa-square-twitter"></i>Twitter</li>
+                    <li class="whats-app"><i class="fa-brands fa-square-whatsapp"></i>Whats app</li>
+                </ul>
+            </div>
+            <div class="text-info">
+                <h3>Support</h3>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>FAQ</li>
+                    <li>About</li>
+                    <li>Careers</li>
+                </ul>
+            </div>
+        </div>
 
-
-
+        <div class="bottom">
+            <p>2024 &copy All Rights Reserved</p>
         </div>
     </footer>
 </body>

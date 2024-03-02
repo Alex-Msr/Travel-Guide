@@ -4,15 +4,15 @@
     box-sizing: border-box;
 }
 
-/*@font-face {
-    font-family: myFirstfont;
-    src: url(roboto.ttf);
-}
-*/
-
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1,7em;
+    font-family:system-ui, '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto, Oxygen, Ubuntu, Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    background-color: #DCD9D4;
+ background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
+ background-blend-mode: soft-light,screen;
+    color: #333;
 }
 
 a{
@@ -21,7 +21,7 @@ a{
 
 .bg-light{
     color: white;
-    font-size: x-large;
+    font-size: 2rem;
 }
 
 .button{
@@ -31,34 +31,68 @@ a{
 
 /*navbar*/
 
-#navbar{
-     background-color: #39593c82;
 
+.home{
+    border: 2px solid #304146 ;
+}
+
+.history{
+    border: 2px solid #304146 ;
+}
+
+.exhibits{
+    border: 2px solid #304146 ;
+}
+
+.events{
+    border: 2px solid #304146 ;
+}
+
+.contact-item{
+    border: 2px solid #304146 ;
+}
+
+.header{
+    width: 100vw;
+}
+
+#navbar{
+     font-size: 1.4rem;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     width: 100%;
+     height: 60px;
+     padding-left: 200px;
+}
+
+#navbar #icon{
+    width: 20%;
 }
 
 #navbar a{
-    color: black;
+    color: #333;
     text-decoration: none;
+}
+
+#navbar img{
+    height: 50px;
+    width: 80px;
 }
 
 
 .container{
     display: flex;
-    /*justify-content: space-around;*/
-    align-items: center;
-    width: 100vw;
-    padding-left: 450px;
-    padding-bottom: 30px;
-    padding-top: 30px;
-    height: 30px;
-    width: auto;
+    width: 80%;
+    height: 60px;
 }
 
-#navbar a:hover{
+#navbar .container a:hover{
     background-color: #444444a9;
     color: white;
+    box-shadow: 0 0 15px #333;
 }
-
 
 .container a{
     display: inline-block;
@@ -67,14 +101,11 @@ a{
     cursor: pointer;
 }
 
-
-p {
-    margin: 10px 0;
-}
-.btn-light{
-    background: #f4f4f4;
-    color: #1a311ed9;
-    padding: 15px 20px;
+.btn{
+    background-color: white;
+   color: black;
+    border: 2px solid #333;
+    padding: 10px 15px;
 }
 .btn:hover{
     background-color: #444444a9;
@@ -84,6 +115,7 @@ p {
 
 
 /*showcase*/
+
 #showcase{
     background: url('../images/yaron-tal-RuwFps5lDX0-unsplash.jpg') no-repeat center center/cover;
     height: 600px;
@@ -93,8 +125,19 @@ p {
     color: #fff;
     text-align: center;
     padding-top: 250px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: x-large;
+    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5rem;
+    background-color: #33333380;
+    height: 600px;
+}
+
+.showcase-content p{
+    margin-top: 20px;
+    font-family: system-ui, '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#showcase .container-img .bg-light{
+    font-size: 4rem;
 }
 
 /* container-box */
@@ -105,8 +148,7 @@ p {
     align-items: center;
     justify-content: center;
     margin: 0;
-    padding-left: 500px;
-    width: 800px;
+    width: 100%;
 
 }
 
@@ -125,31 +167,57 @@ p {
 .box-story{
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    margin-left: 200px;
     padding-bottom: 50px;
+    /*box-shadow: 0 0 15px #3333339b;*/
+    background-color: white;
+    width: 1000px;
 }
 
 .box-story img{
     height: 300px;
     width: 300px;
-    box-shadow: 0 0 15px #39593c89;
+    /*box-shadow: 0 0 15px black;*/
+}
+
+.general-events{
+    margin-top: 100px;
+}
+
+.general-events h1{
+    padding-bottom: 20px;
+    padding: 5px;
+    padding-top: 20px;
+    background-color: #304146;
+    color: white;
+    width: 350px;
+    height: 70px;
+    text-align: center;
+    font-size: 1.8em;
+    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+
 }
 
 .box-events img{
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 0 15px #333;
 }
 
 .box-events{
     display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 1000px;
+  width: 100%;
   padding-top: 50px;
   padding-left: 50px;
   padding-bottom: 50px;
   padding-right: 50px;
-  background: rgb(34,193,195);
-  background: linear-gradient(77deg, rgba(34,193,195,1) 0%, rgba(166,231,130,1) 100%);
+}
+.box-events h2{
+    margin-top: 30px;
 }
 
 .event1{
@@ -159,10 +227,12 @@ p {
     padding-left: 20px;
     padding-top: 20px;
     background-color: white;
-    width: 250px;
-    height: 500px;
-    box-shadow: 0 0 15px white;
+    width: 350px;
+    height: 670px;
+    /*box-shadow: 0 0 15px #333;*/
 }
+
+
 .event2{
     display: flex;
     flex-direction: column;
@@ -170,9 +240,9 @@ p {
     padding-left: 20px;
     padding-top: 20px;
     background-color: white;
-    width: 250px;
-    height: 500px;
-    box-shadow: 0 0 15px white;
+    width: 350px;
+    height: 670px;
+    /*box-shadow: 0 0 15px #333;*/
 }
 .event3{
     display: flex;
@@ -181,9 +251,9 @@ p {
     padding-left: 20px;
     padding-top: 20px;
     background-color: white;
-    width: 250px;
-    height: 500px;
-    box-shadow: 0 0 15px white;
+    width: 350px;
+    height: 670px;
+    /*box-shadow: 0 0 15px #333;*/
 }
 
 .text-story{
@@ -192,7 +262,7 @@ p {
     flex-direction: column;
     padding-left: 80px;
     width: 600px;
-    padding-top: 20px;
+    padding-top: 10px;
 
 }
 
@@ -200,44 +270,53 @@ p {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    padding-top: 5px;
-    font-size: medium;
+    padding-top: 10px;
+    font-size: 1.2rem;
+    line-height: 1.2em;
 }
 
 .top-heading{
     position: relative;
-    margin-top: 50px;
-    width: 1000px;
-    height: 300px;
+    margin-top: 200px;
+    width: 100%;
+    height: 400px;
     display: flex;
     align-items: center;
 }
 
 .top-heading img{
     position: absolute;
-    bottom: 0;
+    bottom: 60px;
     left: 25%;
     transform: translateX(-50%);
-    height: 300px;
-    width:300px;
-    box-shadow: 0 0 15px #39593c89;
+    height: 400px;
+    width:400px;
+    box-shadow: 0 0 15px #333;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .top-heading:hover img{
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     left:80%;
+    cursor: pointer;
 }
-
+.top-heading h2{
+    transition: all 0.5s;
+    opacity: 1;
+}
+.top-heading:hover h2{
+opacity: 0;
+}
 .top-museum{
     position: relative;
     width: 40%;
     left:20%;
     color: black;
-    text-transform: capitalize;
     opacity: 0;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .top-heading:hover .top-museum{
@@ -245,55 +324,118 @@ p {
     opacity: 1;
 }
 
-.card{
+.top2-heading{
+    position: relative;
+    margin-top: 200px;
+    width: 100%;
+    height: 400px;
     display: flex;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.top2-heading img{
+    position: absolute;
+    bottom: 60px;
+    right: 25%;
+    transform: translateX(50%);
+    height: 400px;
+    width:400px;
+    box-shadow: 0 0 15px #333;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.top2-heading:hover img{
+    height: 400px;
+    width: 400px;
+    right: 80%;
+    cursor: pointer;
+}
+
+.second-museum{
+    position: absolute;
+    width: 40%;
+    right: 50%;
+    color: black;
+    opacity: 0;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.top2-heading:hover .second-museum{
+    right: 5%;
+    opacity: 1;
+}
+
+.top2-heading h2{
+    transition: all 0.5s;
+    opacity: 1;
+}
+.top2-heading:hover h2{
+opacity: 0;
+}
+
+.top-heading h2{
+    font-size: 3rem;
+    padding-left: 40px;
+    margin-left: 40px;
+    color: white;
+    background-color: #304146;
+    height: 70px;
+    width: 700px;
+    text-align: center;
+    padding-top: 20px;
+    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
 }
 
 
-.card img{
-    width: 300px;
-    height: 300px;
-    box-shadow: 0 0 15px #39593c89;
+.top2-heading h2{
+    font-size: 3rem;
+    margin-left: 100px;
+    color: white;
+    background-color: #304146;
+    height: 70px;
+    width: 700px;
+    text-align: center;
+    padding-top: 20px;
+    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
 }
-.geology{
-    padding-top: 30px;
-    padding-left: 70px ;
-    width: 500px;
-}
+
+
 .container-reviews{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 30px;
     padding-bottom: 30px;
     margin-bottom: 30px;
-    width: 900px;
-    background: linear-gradient(77deg, rgba(34,193,195,1) 0%, rgba(167,215,140,1) 49%);    box-shadow: 0 0 15px #39593c89;
+    margin-top: 140px;
+    width: 100%;
 }
 
 
 .box-review{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 30px;
-    width: 800px;
-    background: white;
-    border-radius: 20px;
-    
+    width: 80%;
+    height: 400px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
 }
+    
 .box-review img{
     width: 150px;
     height: 200px;
     margin-left: 20px;
-    box-shadow: 0 0 15px #39593c89;
 }
 
 .text-review{
     padding-left: 20px;
+    line-height: 1.3em;
 }
+
 
 .review-1{
     display: flex;
@@ -309,15 +451,39 @@ p {
     padding-top: 30px;
 }
 
+
+
+.card{
+    display: flex;
+    padding-top: 50px;
+    padding-left: 50px;
+    width: 100vw;
+    height: 600px;
+    background: url('../images/israel-ferrera-oicKYJH9w7w-unsplash.jpg')no-repeat center center/cover;
+    margin-top: 200px;
+}
+
+.geology{
+    margin-top: 70px;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    height: 400px;
+    width: 700px;
+    color: white;
+    background-color: #33333371;
+}
+
 /* footer*/
 .contact-info{
     display: flex;
     width: 100%;
-    height: 150px;
-  justify-content: space-around;
-    background-color: #39593c89;
+    height: 300px;
+    justify-content: space-evenly;
+    background-color: #304146;
     align-items: center;
     color: #f4f4f4;
+    line-height: 1em;
 }
 .contact-info ul li{
     list-style: none;
@@ -333,30 +499,55 @@ p {
 }
 
 .text-info ul li i{
-    display: flex;
-    flex-direction: row;
+   float: left;
+   padding-right: 7px;
+   padding-top: 2px;
 }
 .text-info h3{
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
-
 
 
 .bottom{
     display: flex;
     width:100vw;
-    height: 25px;
-    background-color: rgb(55, 52, 52);
+    height: 50px;
+    background-color: #304146;
     justify-content: center;
     align-items: center;
-    color:white;
+    color:#f4f4f4;
+    font-size: 1rem;
+    border-top: 1px solid #f4f4f4;
+}
+
+
+.text-info .fa-brands{
+    color: white;
+}
+
+
+.logo img{
+    height: 100px;
+    width: 200px;
 }
 
 /* history */
 
-img{
-    width: 300px;
-    height: 500px;
+.history-tab{
+    width: 100vw;
+    height: 100px;
+    background-color: #304146;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}
+
+
+
+.myImage{
+    display: none;
 }
 
 .slideshow-intro{
@@ -365,29 +556,53 @@ img{
 }
 .slideshow-intro img{
     width: 500px;
-    padding-left: 50px;
+    height: 500px;
 }
+
+
 .flexbox-slideshow{
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
-    padding-left: 600px;
+    margin-left: 250px;
     width: 800px;
-    padding-top: 60px;
+    margin-top: 60px;
+    background-color: white;
 }
 
 .text-slideshow{
-    padding-top: 30px;
+    padding-top: 100px;
     padding-right: 50px;
     width: 500px;
+    margin-left: 300px;
 }
 
-
-.heading-timeline{
-    padding-left: 230px;
-   padding-top: 80px;
+i{
+    color: #333;
+    width: 20px;
+    height: 20px;
+    padding-top: 5px;
 }
+
+#indicator{
+    text-align: center;
+    margin-left: 600px;
+}
+
+.dot{
+    cursor: pointer;
+    margin-top: 10px;
+    height: 5px;
+    width: 20px;
+    background-color: #bbb;
+    display: inline-block;
+}
+
+.active, .dot:hover{
+    background-color: #333;
+}
+
 
 
 .flexbox-timeline{
@@ -395,16 +610,16 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0;
-    padding-left: 600px;
-    width: 800px;
-    padding-top: 40px;
-    padding-bottom: 60px;
+    width: 100vw;
+    margin-top: 30px;
+    margin-bottom: 150px;
 }
 
 .timeline-intro img{
     width: 200px;
     height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #333;
 }
 
 .timeline-intro{
@@ -415,56 +630,61 @@ img{
 .timeline{
     display: flex;
     flex-direction: column;
-    padding-right: 40px;
+    margin-right: 40px;
+}
+
+.timeline h3{
+    margin-left: 30px;
+    margin-top: 10px;
 }
  
-h2{
+
+.heading-timeline{
+    margin-top: 150px;
+}
+.heading-timeline h2{
     padding-bottom: 20px;
+    padding: 5px;
+    padding-top: 20px;
+    background-color: #304146;
+    color: white;
+    width: 350px;
+    height: 70px;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 1.8em;
+    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
 }
 
-
-/*.timeline-history{
-    display: flex;
-    flex-direction: column;
-    padding-top: 100px;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-}*/
-
+.time{
+    margin-left: 30px;
+}
 #first-timeline{
-    /*display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;*/
-    padding-top: 100px;
+    padding-top: 30px;
     background: url('../images/Green-Desktop-Wallpaper-Hd-Landscape-Mountain-Lake-grass-sky-clouds-1920x1080.jpg')no-repeat center center/cover;
-    height: 400px;
+    height: 450px;
     color: white;
     padding-left: 100px;
 }
 
 
 .text-timeline{
-    width: 600px;
+    width: 900px;
     padding-right: 50px;
     background-color: rgba(56, 54, 54, 0.571);
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 20px;
+    margin-bottom: 50px;
 }
 
 
 #second-timeline{
-    /*display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;*/
     padding-top: 100px;
-    height: 400px;
+    height: 500px;
     color: white;
     background: url('../images/meteora-gallery-05-min-55a68742.jpeg')no-repeat center center/cover;
-    padding-left: 800px;
+    padding-left: 500px;
 }
 
 
@@ -474,12 +694,8 @@ h2{
 
 
 #third-timeline{
-   /*display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;*/
     padding-top: 100px;
-    background: url('../images/20181215-DSC00798-Meteorabynight-1024x472.jpg')no-repeat center center/cover;
+    background: url('../images/meteora.jpg')no-repeat center center/cover;
     height: 500px;
     padding-left: 100px;
     color: white;
@@ -491,15 +707,11 @@ h2{
 }
 
 #fourth-timeline{
-    /*display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;*/
     padding-top: 100px;
     background: url('../images/2.jpg') no-repeat center center/cover;
     height: 500px;
     color: white;
-    padding-left: 800px;
+    padding-left: 500px;
 }
 
 
@@ -508,7 +720,30 @@ h2{
 }
 
 
-/* sights/museums/restaurants */
+/* exhibits */
+
+.top-box{
+   display: flex;
+   flex-direction: column;
+    width: 100vw;
+}
+
+.showcase-sights{
+    position: relative;
+}
+
+
+
+.exhibits-tab{
+    width: 100vw;
+    height: 100px;
+    background-color: #304146;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}
 
 .showcase-sights{
     width: 100vw;
@@ -518,116 +753,242 @@ h2{
     width: 100%; 
     height: 600px;
 }
-.top-box{
-    display: flex;
-    flex-direction: column;
-    width: 800px;
-    padding-left: 200px;
-}
 
 .flexbox-sights img{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px #333;
 }
 
 .flexbox-sights{
     display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-}
-
-.text-sights{
-    display: flex;
-    flex-direction: column;
-    padding-left: 15px;
-    padding-top: 20px;
+    flex-direction: row;
+    width: 80%;
+    position: absolute;
+    top: 90%;
+    left: 10%;
 }
 
 .sights{
     display: flex;
-    flex-direction: row;
-    padding-bottom: 50px;
-    width: 900px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sights:hover img{
+    box-shadow: 0 0 15px white;
+    transition: all 0.5s;
+}
+
+.sights h3{
+    text-align: center;
+    margin-top: 10px;
 }
 
 
 /*monasteries*/
 
+.slideshow-monasteries h2{
+    padding-bottom: 20px;
+    padding: 5px;
+    padding-top: 20px;
+    background-color: #304146;
+    color: white;
+    width: 350px;
+    height: 70px;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 1.8em;
+    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}
+
 .slideshow-monasteries{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    width: 100vw;
+    padding-top: 300px;
+}
+
+.first-grid{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
-    margin: 0;
-    padding-left: 600px;
-    width: 800px;
-    padding-top: 60px;
+    width: 100%;
+    padding: 30px;
+    gap: 60px;
+}
+
+.second-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    gap: 60px;
 }
 
 
-.first-monastery h3{
-    padding-top: 20px;
+.third-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
+    gap: 60px;
+}
+
+.slideshow-monasteries img{
+    width: 500px;
+    height: 500px;
+    padding-bottom: 30px;
+}
+
+#first-monastery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    padding: 20px;
+}
+
+#first-monastery:hover{
+    background-color: white;
+    box-shadow: 0 0 15px #333;
+    transition: all 0.5s;
 }
 
 .second-monastery{
-    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    padding: 20px;
 }
 
-.second-monastery h3{ 
-    padding-top: 20px;
+
+.second-monastery:hover{
+    background-color: white;
+    box-shadow: 0 0 15px #333;
+    transition: all 0.5s;
 }
 
 .third-monastery{
-    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 40%;
 }
 
-.third-monastery h3{
-    padding-top: 20px;
+.third-monastery:hover{
+    background-color: white;
+    box-shadow: 0 0 15px #333;
+    transition: all 0.5s;
 }
-
 .fourth-monastery{
-    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    padding: 20px;
 }
-.fourth-monastery h3{
-    padding-top: 20px;
+
+.fourth-monastery:hover{
+    background-color: white;
+    box-shadow: 0 0 15px #333;
+    transition: all 0.5s;
 }
+
 
 .fifth-monastery{
-    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    padding: 20px;
 }
 
-.fifth-monastery h3{
-    padding-top: 20px;
+
+
+.fifth-monastery:hover{
+    background-color: white;
+    box-shadow: 0 0 15px #333;
+    transition: all 0.5s;
 }
 
 .sixth-monastery{
-    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 40%;
+    padding: 20px;
 }
 
-.sixth-monastery h3{
-    padding-top: 20px;
+.sixth-monastery:hover{
+    background-color: white;
+    box-shadow: 0 0 15px #333;
+    transition: all 0.5s;
 }
+
 
 /*museums*/
+
+.museum-box{
+    display: flex;
+    flex-direction: row;
+    padding-left: 150px;
+    width: 100vw;
+    background-color: white;
+}
+
+.background-heading{
+    width: 100vw;
+    background-color: white;
+}
+
+.heading-museums{
+    padding-bottom: 20px;
+    padding: 5px;
+    padding-top: 20px;
+    background-color: #304146;
+    color: white;
+    width: 350px;
+    height: 70px;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 1.8em;
+    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}
 
 .flexbox-museums img{
     width: 250px;
     height: 250px;
+    box-shadow: 0 0 15px #333;
 } 
 
 .flexbox-museums{
     display: flex;
     flex-direction: column;
-    padding-left: 15px;
-    padding-top: 90px;
+    justify-content: center;
+    margin-top: 50px;
+
 }
 
 .text-museum{
     display: flex;
     flex-direction: column;
-    padding-left: 15px;
-    padding-top: 20px;
-    width: 500px;
+    margin-left: 50px;
+    margin-top: 10px;
+    width: 600px;
 }
 
 .museum{
@@ -644,24 +1005,46 @@ h2{
 
 /* restaurants */
 
+.restaurant-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+}
+.heading-maps{
+    padding-bottom: 20px;
+    padding: 5px;
+    padding-top: 20px;
+    background-color: #304146;
+    color: white;
+    width: 350px;
+    height: 70px;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 1.8em;
+    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}
+
 .flexbox-restaurants img{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 15px #333;
 } 
 
 .flexbox-restaurants{
     display: flex;
     flex-direction: column;
-    padding-left: 15px;
-    padding-top: 90px;
+    justify-content: center;
+    width: 70%;
+    height: fit-content;
+    padding-top: 50px;
 }
 
 .text-restaurant{
     display: flex;
     flex-direction: column;
-    padding-left: 15px;
-    padding-top: 20px;
-    width: 300px;
+    margin-left: 15px;
+    margin-top: 15px;
 }
 
 .restaurant{
@@ -680,16 +1063,49 @@ h2{
     display: flex;
     flex-direction: row;
     padding-bottom: 90px;
+    width: 100vw;
 }
 
 .iframe{
-    padding-left: 0px;
-    padding-right: 50px;
-    padding-top: 90px;
-    height: 1070px;
+    margin-left: 0px;
+    margin-right: 100px;
+    height: 800px;
+    width: 50%;
 }
 
 /* events/activities */
+
+.events-bookmark{
+    padding-bottom: 20px;
+    padding: 5px;
+    padding-top: 20px;
+    background-color: #304146;
+    color: white;
+    width: 350px;
+    height: 70px;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 1.8em;
+    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}
+
+
+.events-tab{
+    width: 100vw;
+    height: 100px;
+    background-color: #304146;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}
+.big-box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+}
 
 .showcase-events{
     width: 100vw;
@@ -707,9 +1123,8 @@ h2{
 .container-event{
     display: flex;
     flex-direction: column;
-    width: 1000px;
+    width: 80%;
     padding-top: 50px;
-    padding-left: 20px;
 }
 
 .flexbox-intro{
@@ -752,9 +1167,11 @@ h2{
 #flexbox-activities{
     display: flex;
     flex-direction: row;
-    padding-left: 20px;
-    padding-top: 50px;
-    width: 700px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 80px;
+    width: 80%;
 }
 
 .activity{
@@ -764,20 +1181,21 @@ h2{
 .activity-ride img{
     width: 200px;
     height: 200px;
-    padding-left: 20px;
 }
 
 .activity-ride{
     display: flex;
     flex-direction: row;
-    width: 900px;
-    padding-top: 30px;
+    width: 80%;
+    margin-left: 80px;
+    padding-top: 50px;
 }
 
 
 .text-ride{
     padding-left: 15px;
-    padding-top: 40px;
+    padding-top: 10px;
+    width: 30%;
   
 }
 
@@ -786,6 +1204,19 @@ h2{
 }
 
 /* contact*/
+
+
+.contact-tab{
+    width: 100vw;
+    height: 100px;
+    background-color: #304146;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 2em;
+    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}
+
 
 .container-contact{
     display: flex;
