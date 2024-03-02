@@ -781,6 +781,7 @@ i{
 .sights:hover img{
     box-shadow: 0 0 15px white;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .sights h3{
@@ -859,6 +860,7 @@ i{
     background-color: white;
     box-shadow: 0 0 15px #333;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .second-monastery{
@@ -875,6 +877,7 @@ i{
     background-color: white;
     box-shadow: 0 0 15px #333;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .third-monastery{
@@ -890,6 +893,7 @@ i{
     background-color: white;
     box-shadow: 0 0 15px #333;
     transition: all 0.5s;
+    cursor: pointer;
 }
 .fourth-monastery{
     display: flex;
@@ -904,6 +908,7 @@ i{
     background-color: white;
     box-shadow: 0 0 15px #333;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 
@@ -922,6 +927,7 @@ i{
     background-color: white;
     box-shadow: 0 0 15px #333;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 .sixth-monastery{
@@ -937,6 +943,7 @@ i{
     background-color: white;
     box-shadow: 0 0 15px #333;
     transition: all 0.5s;
+    cursor: pointer;
 }
 
 
@@ -953,6 +960,7 @@ i{
 .background-heading{
     width: 100vw;
     background-color: white;
+    padding-top: 20px;
 }
 
 .heading-museums{
@@ -964,7 +972,6 @@ i{
     width: 350px;
     height: 70px;
     text-align: center;
-    margin-top: 80px;
     font-size: 1.8em;
     font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
 }
@@ -1084,9 +1091,14 @@ i{
     width: 350px;
     height: 70px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 20px;
     font-size: 1.8em;
     font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}
+
+.background-event{
+    width: 100vw;
+    background-color: white;
 }
 
 
@@ -1102,7 +1114,6 @@ i{
 }
 .big-box{
     display: flex;
-    justify-content: center;
     flex-direction: column;
     width: 100vw;
 }
@@ -1116,13 +1127,11 @@ i{
     height: 600px;
 }
 
-.container-event img{
-    width: 400px;
-    height: 200px;
-}
 .container-event{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     padding-top: 50px;
 }
@@ -1130,27 +1139,47 @@ i{
 .flexbox-intro{
     display: flex;
     flex-direction: column;
-   
+    justify-content: center;
+    align-items: center;
+}
+
+.flexbox-intro img{
+    width: 250px;
+    height: 200px;
 }
 
 .text-event{
     display: flex;
     flex-direction: column;
-    padding-left: 15px;
+    padding-left: 30px;
     padding-top: 10px;
 }
 .box-event{
     display: flex;
     flex-direction: row;
-    padding-left: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
+    padding-bottom: 30px;
+    max-width: 70%;
+}
+
+.box-event1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 150px;
     padding-bottom: 30px;
 }
 
 #flexbox-events{
     display: flex;
     flex-direction: column;
-    width: 900px;
-    padding-top: 100px;
+    width: 100%;
+    padding-top: 70px;
+    background-color: white;
+    height: 900px;
 }
 
 #flexbox-events img{
@@ -1159,48 +1188,56 @@ i{
 }
 
 
+.activities-bookmark{
+    padding-bottom: 20px;
+    padding: 5px;
+    padding-top: 20px;
+    background-color: #304146;
+    color: white;
+    width: 350px;
+    height: 70px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.8em;
+    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+}
+
 #flexbox-activities img{
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 250px;
 }
 
 #flexbox-activities{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-    margin-left: 80px;
-    width: 80%;
+    justify-content: space-evenly;
+    margin-top: 70px;
+    width: 100vw;
 }
 
 .activity{
-    padding-right: 150px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   max-width: 30%;
+   padding: 20px;
 }
 
-.activity-ride img{
-    width: 200px;
-    height: 200px;
+.activity:hover{
+    background-color: white;
+    box-shadow: 0 0 15px #333;
+    transition: all 0.5s;
+    cursor: pointer;
 }
 
-.activity-ride{
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    margin-left: 80px;
-    padding-top: 50px;
-}
-
-
-.text-ride{
-    padding-left: 15px;
-    padding-top: 10px;
-    width: 30%;
+.text-activity{
+    padding-top: 20px;
   
 }
 
 .big-box{
-    padding-bottom: 60px;
+    padding-bottom: 200px;
 }
 
 /* contact*/
@@ -1226,42 +1263,125 @@ i{
 .center-form{
     display: flex;
     flex-direction: row;
-    width: 1200px;
-    padding-left: 50px;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .contact{
+    max-width: 40%;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact:hover{
+    background-color: white;
+    box-shadow: 0 0 15px #333;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+.contact .text-info li{
+    list-style: none;
+}
+
+.contact .text-info{
     padding-top: 30px;
 }
 
 .contact-form{
     display: flex;
     flex-direction: column;
-    padding-left: 100px;
-    padding-top: 40px;
-    width: 1200px;
+    width: 450px;
 }
 
-.name{
-    border: 2px solid #333;  
-    margin-bottom: 15px;
-    padding-bottom: 10px;
+.container-form{
+    max-width: 500px;
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
 }
 
-.email{
-    border: 2px solid #333;  
-    margin-bottom: 15px;
-    padding-bottom: 10px;
+.container-form header{
+    color: #333;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container-form form{
+    margin-top: 20px;
+}
+
+.contact-form .input-type{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.contact-form :where(.input-type input, .select-box){
+    width: 100%;
+    height: 30px;
+    outline: none;
+    color: #707070;
+    border: 1px solid #ddd;
+    padding: 0 15px;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+
+.input-type input:focus{
+    box-shadow: 0 1px 10px  #304146;
+}
+
+.contact-form .address-details{
+    display: flex;
+    column-gap: 15px;
+}
+
+.address :where(input, .select-box){
+    margin-top: 15px;
+}
+
+.select-box select{
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #707070;
+    font-size: 1rem;
+}
+
+.contact-form button{
+    height: 35px;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: #304146;
+    transition: all 0.2s ease;
+    border-radius: 10px;
+}
+
+.contact-form button:hover{
+    background-color: #466169;
+    border-radius: none;
 }
 
 .message{
-    padding-bottom: 50px;
-    border: 2px solid #333;  
+    height: 70px;
 }
 
-.button-send{
-   padding-left: 550px;
-   padding-top: 30px;
+.on-input-error{
+    border: 2px solid red;
 }
 
 .info{
@@ -1270,14 +1390,51 @@ i{
     padding-bottom: 50px;
 }
 
-.info h3{
-    border: 2px solid #333;  
-   display: inline-flex;
+.info-heading{
+        padding-bottom: 20px;
+        padding: 5px;
+        padding-top: 20px;
+        background-color: #304146;
+        color: white;
+        width: 350px;
+        height: 70px;
+        text-align: center;
+        margin-top: 20px;
+        font-size: 1.8em;
+        font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
 }
 
-.text-faq{
-    padding-top: 20px;
+.accordion-header{
+    background-color: white;
+    color:#333;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline:none;
+    transition: 0.4s;
+    border-bottom: 1px solid #333;
 }
+
+.active, .accordion-header:hover{
+    background-color: #ccc;
+}
+
+.accordion-content{
+    padding: 0 20px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+}
+
+
+.accordion{
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+
 
 
 

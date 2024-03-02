@@ -18,15 +18,6 @@ function showSlides(){
     slides[slidesIndex - 1].style.display = "block";
     dots[slidesIndex-1].className += " active";
     slideInterval = setTimeout (showSlides, 3000);
-
-    //for (i = 0; i < slides.length; i++) {
-     //   slides[i].style.opacity = 0;
-    //  }
-    //  slidesIndex++;
-    //  if (slidesIndex > slides.length) {
-    //    slidesIndex = 1
-   //   }
-   //  slides[slidesIndex - 1].style.opacity = 1;
 }
 
 function prevSlide(){
