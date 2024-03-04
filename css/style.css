@@ -4,10 +4,11 @@
     box-sizing: border-box;
 }
 
+
 body{
     font-family:system-ui, '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto, Oxygen, Ubuntu, Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
     line-height: 1.5em;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-size: 1.2rem;
     background-color: #DCD9D4;
  background-image: linear-gradient(to bottom, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%), radial-gradient(at 50% 0%, rgba(255,255,255,0.10) 0%, rgba(0,0,0,0.50) 50%);
@@ -58,6 +59,7 @@ a{
 
 #navbar{
      font-size: 1.4rem;
+     font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
      display: flex;
      flex-direction: row;
      justify-content: space-around;
@@ -91,7 +93,7 @@ a{
 #navbar .container a:hover{
     background-color: #444444a9;
     color: white;
-    box-shadow: 0 0 15px #333;
+    box-shadow: 0 0 10px #333;
 }
 
 .container a{
@@ -106,6 +108,7 @@ a{
    color: black;
     border: 2px solid #333;
     padding: 10px 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .btn:hover{
     background-color: #444444a9;
@@ -117,7 +120,7 @@ a{
 /*showcase*/
 
 #showcase{
-    background: url('../images/yaron-tal-RuwFps5lDX0-unsplash.jpg') no-repeat center center/cover;
+    background: url('../images/israel-ferrera-oicKYJH9w7w-unsplash.jpg') no-repeat center center/cover;
     height: 600px;
 }
 
@@ -126,18 +129,32 @@ a{
     text-align: center;
     padding-top: 250px;
     font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     background-color: #33333380;
     height: 600px;
 }
 
 .showcase-content p{
-    margin-top: 20px;
-    font-family: system-ui, '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #showcase .container-img .bg-light{
     font-size: 4rem;
+}
+
+
+.main{
+    background-color: rgba(255, 255, 255, 0.683);
+    color: #333;
+    border: 2px solid #333;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.main:hover{
+    background-color: #444444a9;
+    color: #f8f8f8;
 }
 
 /* container-box */
@@ -145,7 +162,6 @@ a{
 .container-box{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     margin: 0;
     width: 100%;
@@ -171,7 +187,6 @@ a{
     padding-top: 30px;
     margin-left: 200px;
     padding-bottom: 50px;
-    /*box-shadow: 0 0 15px #3333339b;*/
     background-color: white;
     width: 1000px;
 }
@@ -179,7 +194,6 @@ a{
 .box-story img{
     height: 300px;
     width: 300px;
-    /*box-shadow: 0 0 15px black;*/
 }
 
 .general-events{
@@ -405,53 +419,125 @@ opacity: 0;
 .container-reviews{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding-bottom: 30px;
-    margin-bottom: 30px;
-    margin-top: 140px;
-    width: 100%;
+    width: 100vw;
+    height: 600px;
+    background-color: white;
+}
+
+
+.review-heading{
+    padding-bottom: 20px;
+    padding: 5px;
+    padding-top: 20px;
+    background-color: #304146;
+    color: white;
+    width: 350px;
+    height: 70px;
+    text-align: center;
+    font-size: 1.8em;
+    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
 }
 
 
 .box-review{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     padding-bottom: 30px;
     width: 80%;
     height: 400px;
-    background-color: #fff;
+    background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+    color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
 }
     
 .box-review img{
     width: 150px;
-    height: 200px;
+    height: 150px;
     margin-left: 20px;
+    border-radius: 50%;
 }
 
 .text-review{
-    padding-left: 20px;
-    line-height: 1.3em;
+    text-align: center;
+    padding-left: 10px;
 }
 
+.review-2 img{
+    width: 250px;
+    height: 250px;
+}
+
+.text-review i{
+    color: rgb(255, 196, 0);
+}
 
 .review-1{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-right: 80px;
     padding-top: 30px;
+    font-size: 0.8rem;
+}
+
+
+.review-1:hover img{
+    box-shadow: 0 0 20px white;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
 }
 
 .review-2{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
     padding-right: 50px;
     padding-top: 30px;
 }
 
+.review-2:hover img{
+    box-shadow: 0 0 20px white;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
 
+.review-2 .text-review{
+    padding-top: 50px;
+    padding-left: 10px;
+}
+
+
+.review-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    padding-right: 50px;
+    padding-top: 30px;
+    font-size: 0.8rem;
+}
+
+.review-3:hover img{
+    box-shadow: 0 0 20px white;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+
+.box-review .pointer i{
+    font-size: 3rem;
+    color:#3333337b;
+}
+
+.box-review .pointer:hover{
+    cursor: pointer;
+}
 
 .card{
     display: flex;
@@ -459,19 +545,31 @@ opacity: 0;
     padding-left: 50px;
     width: 100vw;
     height: 600px;
-    background: url('../images/israel-ferrera-oicKYJH9w7w-unsplash.jpg')no-repeat center center/cover;
-    margin-top: 200px;
+    cursor: pointer;
+    background: url('../images/yaron-tal-RuwFps5lDX0-unsplash.jpg')no-repeat center center/cover;
 }
 
 .geology{
+    opacity: 0;
     margin-top: 70px;
     padding-top: 50px;
     padding-left: 30px;
     padding-bottom: 20px;
-    height: 400px;
+    height: 340px;
     width: 700px;
     color: white;
     background-color: #33333371;
+    box-shadow: 0 0 20px white;
+}
+
+.geology p{
+    padding-top: 20px;
+}
+
+.card:hover .geology{
+    opacity: 1;
+    transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 /* footer*/
@@ -559,7 +657,9 @@ opacity: 0;
     height: 500px;
 }
 
-
+.slideshow-intro p{
+    margin-top: 15px;
+}
 .flexbox-slideshow{
     display: flex;
     align-items: center;
@@ -612,7 +712,6 @@ i{
     justify-content: center;
     width: 100vw;
     margin-top: 30px;
-    margin-bottom: 150px;
 }
 
 .timeline-intro img{
@@ -625,6 +724,10 @@ i{
 .timeline-intro{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 50px
 }
 
 .timeline{
@@ -634,10 +737,15 @@ i{
 }
 
 .timeline h3{
-    margin-left: 30px;
     margin-top: 10px;
 }
  
+
+.timeline:hover img{
+    box-shadow: 0 0 15px white;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+}
 
 .heading-timeline{
     margin-top: 150px;
@@ -660,16 +768,21 @@ i{
     margin-left: 30px;
 }
 #first-timeline{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
     padding-top: 30px;
-    background: url('../images/Green-Desktop-Wallpaper-Hd-Landscape-Mountain-Lake-grass-sky-clouds-1920x1080.jpg')no-repeat center center/cover;
     height: 450px;
-    color: white;
-    padding-left: 100px;
+    width: 100%;
 }
 
-
+#first-timeline img{
+    width: 600px;
+    height: 600px;
+}
 .text-timeline{
-    width: 900px;
+    width: 50%;
+    color: white;
     padding-right: 50px;
     background-color: rgba(56, 54, 54, 0.571);
     padding-top: 30px;
@@ -682,6 +795,7 @@ i{
 #second-timeline{
     padding-top: 100px;
     height: 500px;
+    width: 100%;
     color: white;
     background: url('../images/meteora-gallery-05-min-55a68742.jpeg')no-repeat center center/cover;
     padding-left: 500px;
@@ -697,6 +811,7 @@ i{
     padding-top: 100px;
     background: url('../images/meteora.jpg')no-repeat center center/cover;
     height: 500px;
+    width: 100%;
     padding-left: 100px;
     color: white;
 }
@@ -710,6 +825,7 @@ i{
     padding-top: 100px;
     background: url('../images/2.jpg') no-repeat center center/cover;
     height: 500px;
+    width: 100%;
     color: white;
     padding-left: 500px;
 }
@@ -780,7 +896,7 @@ i{
 
 .sights:hover img{
     box-shadow: 0 0 15px white;
-    transition: all 0.5s;
+    transition: all 0.5s ease-out;
     cursor: pointer;
 }
 
@@ -856,11 +972,22 @@ i{
     padding: 20px;
 }
 
+#first-monastery p{
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
 #first-monastery:hover{
     background-color: white;
     box-shadow: 0 0 15px #333;
     transition: all 0.5s;
     cursor: pointer;
+}
+
+#first-monastery:hover img{
+    width: 600px;
+    height: 600px;
+    transition: all 0.5s ease-out;
 }
 
 .second-monastery{
@@ -872,12 +999,22 @@ i{
     padding: 20px;
 }
 
+.second-monastery p{
+    padding-top: 15px;
+    padding-left: 10px;
+}
 
 .second-monastery:hover{
     background-color: white;
     box-shadow: 0 0 15px #333;
     transition: all 0.5s;
     cursor: pointer;
+}
+
+.second-monastery:hover img{
+    width: 600px;
+    height: 600px;
+    transition: all 0.5s ease-out;
 }
 
 .third-monastery{
@@ -889,11 +1026,22 @@ i{
     max-width: 40%;
 }
 
+.third-monastery p{
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
 .third-monastery:hover{
     background-color: white;
     box-shadow: 0 0 15px #333;
     transition: all 0.5s;
     cursor: pointer;
+}
+
+.third-monastery:hover img{
+    width: 600px;
+    height: 600px;
+    transition: all 0.5s ease-out;
 }
 .fourth-monastery{
     display: flex;
@@ -904,11 +1052,21 @@ i{
     padding: 20px;
 }
 
+.fourth-monastery p{
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
 .fourth-monastery:hover{
     background-color: white;
     box-shadow: 0 0 15px #333;
     transition: all 0.5s;
     cursor: pointer;
+}
+.fourth-monastery:hover img{
+    width: 600px;
+    height: 600px;
+    transition: all 0.5s ease-out;
 }
 
 
@@ -921,13 +1079,22 @@ i{
     padding: 20px;
 }
 
-
+.fifth-monastery p{
+    padding-top: 15px;
+    padding-left: 10px;
+}
 
 .fifth-monastery:hover{
     background-color: white;
     box-shadow: 0 0 15px #333;
     transition: all 0.5s;
     cursor: pointer;
+}
+
+.fifth-monastery:hover img{
+    width: 600px;
+    height: 600px;
+    transition: all 0.5s ease-out;
 }
 
 .sixth-monastery{
@@ -939,11 +1106,22 @@ i{
     padding: 20px;
 }
 
+.sixth-monastery p{
+    padding-top: 15px;
+    padding-left: 10px;
+}
+
 .sixth-monastery:hover{
     background-color: white;
     box-shadow: 0 0 15px #333;
     transition: all 0.5s;
     cursor: pointer;
+}
+
+.sixth-monastery:hover img{
+    width: 600px;
+    height: 600px;
+    transition: all 0.5s ease-out;
 }
 
 
@@ -998,6 +1176,9 @@ i{
     width: 600px;
 }
 
+.text-museum p{
+    padding-top: 15px;
+}
 .museum{
     display: flex;
     flex-direction: row;
@@ -1134,6 +1315,7 @@ i{
     align-items: center;
     width: 80%;
     padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 .flexbox-intro{
@@ -1202,10 +1384,6 @@ i{
     font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
 }
 
-#flexbox-activities img{
-    width: 400px;
-    height: 250px;
-}
 
 #flexbox-activities{
     display: flex;
@@ -1216,25 +1394,72 @@ i{
 }
 
 .activity{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   max-width: 30%;
-   padding: 20px;
+    position: relative;
+    width: 400px;
+    height: 300px;
+    box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.5);
 }
 
-.activity:hover{
-    background-color: white;
-    box-shadow: 0 0 15px #333;
-    transition: all 0.5s;
-    cursor: pointer;
+.activity h1{
+    font-size: 30px;
 }
 
 .text-activity{
-    padding-top: 20px;
-  
+    position: absolute;
+    padding-top: 25px;
+    bottom: 0px;
+    width: 80%;
+    height: 80px;
+    background-color: white;
+    text-align: center;
+    left: 10%;
+    overflow: hidden;
+    transition: 0.5s;
 }
+
+.text-activity p{
+    width: 80%;
+    margin: 10px auto;
+    opacity: 0;
+    padding-top: 25px;
+    transition: 0.5s;
+}
+
+
+.imagebox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.imagebox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.activity:hover .text-activity{
+    height: 100%;
+    width: 100%;
+    left: 0%;
+}
+
+.activity:hover p{
+    opacity: 1;
+    transition-delay: 0.3s;
+    cursor: pointer;
+}
+
+.activity:hover img{
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+
 
 .big-box{
     padding-bottom: 200px;
@@ -1272,28 +1497,31 @@ i{
 
 .contact{
     max-width: 40%;
-    width: 400px;
+    width: 450px;
     height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1.2em;
 }
 
-.contact:hover{
-    background-color: white;
-    box-shadow: 0 0 15px #333;
-    transition: all 0.5s;
-    cursor: pointer;
-}
 
 
 .contact .text-info li{
     list-style: none;
+    padding-top: 20px;
 }
 
 .contact .text-info{
-    padding-top: 30px;
+    background-color: white;
+    width: 500px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.contact h1{
+    margin-bottom: 25px;
 }
 
 .contact-form{
@@ -1302,11 +1530,21 @@ i{
     width: 450px;
 }
 
+.contact-form input{
+    font-size: 1rem;
+}
+
 .container-form{
     max-width: 500px;
     height: 600px;
     background-color: rgb(255, 255, 255);
     padding: 25px;
+}
+
+.container-form:hover{
+    box-shadow: 0 0 15px #333;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
 }
 
 .container-form header{
@@ -1361,7 +1599,7 @@ i{
     height: 35px;
     width: 100%;
     color: white;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
     margin-top: 30px;
     border: none;
@@ -1414,10 +1652,9 @@ i{
     border: none;
     outline:none;
     transition: 0.4s;
-    border-bottom: 1px solid #333;
 }
 
-.active, .accordion-header:hover{
+.active1, .accordion-header:hover{
     background-color: #ccc;
 }
 
@@ -1432,9 +1669,12 @@ i{
 
 .accordion{
     margin-bottom: 100px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
+.accordion-item{
+    padding: 20px 0 20px;
+}
 
 
 
