@@ -34,8 +34,8 @@
     .box-story {
         display: flex;
         align-items: center;
-        /*justify-content: center;*/
-        margin-top: 15px;
+        justify-content: center;
+        padding-top: 30px;
         margin-left: 0;
         padding-bottom: 50px;
         background-color: white;
@@ -86,7 +86,6 @@
         width: 280px;
         margin-right: 15px;
         height: 500px;
-        /*box-shadow: 0 0 15px #333;*/
     }
 
 
@@ -98,7 +97,6 @@
         width: 280px;
         height: 500px;
         margin-right: 15px;
-        /*box-shadow: 0 0 15px #333;*/
     }
 
     .event3 {
@@ -109,7 +107,6 @@
         width: 280px;
         margin-right: 15px;
         height: 500px;
-        /*box-shadow: 0 0 15px #333;*/
     }
 
     .box-events .text {

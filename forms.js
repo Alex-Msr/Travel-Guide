@@ -2,6 +2,7 @@ const form = document.querySelector("form");
 const email1 = document.querySelector("#email");
 const email2 = document.getElementById("confirm-email");
 form?.addEventListener("submit", handleSubmit);
+
 function handleSubmit(event) {
 
     if (email1.value === email2.value) {
@@ -13,11 +14,14 @@ function handleSubmit(event) {
         const email1 = document.querySelector("#email");
         const email2 = document.querySelector("#confirm-email");
         event.preventDefault();
-        const confirmationEmailElement = form.querySelector('#confirm-email')
-        confirmationEmailElement.classList.add('on-input-error');
+        email2.classList.add('on-input-error');
         alert("Confirmation failed. Check email")
     }
+    if(email1.value === email2.value){
+      email2.classList.remove('on-input-error');
+    }
 }
+
 
 function validateEmail(email) {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
