@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/fc6b22f201.js" crossorigin="anonymous"></script>
     <script src="json.js" defer></script>
-    <link rel="stylesheet" href="responcive.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
 <body>
@@ -25,6 +25,22 @@
                 <a href="events.html">Events</a>
                 <a href="contact.html">Contact</a>
             </div>
+
+            <!--for mobile use-->
+            <div class="hamburger-menu">
+                <input id="menutoggle" type="checkbox" />
+                <label class="menubtn" for="menutoggle">
+                  <span></span>
+                </label>
+        
+                <ul class="menubox">
+                  <li><a class="menuitem" href="index.html">Home</a></li>
+                  <li><a class="menuitem" href="history.html">History</a></li>
+                  <li><a class="menuitem" href="exhibits.html">Exhibits</a></li>
+                  <li><a class="menuitem" href="events.html">Events</a></li>
+                  <li><a class="menuitem" href="contact.html">Contact</a></li>
+                </ul>
+              </div>
         </nav>
 
 
@@ -105,6 +121,19 @@
 
                     <h2>Natural History Museum</h2>
                 </div>
+                <!-- duplicate for responsive mobile-->
+                <div class="top-heading2">
+                    <h2>Natural History Museum</h2>
+                    <img src="images/Natural-History-Museum-of-Meteora-Featured-Image.jpg">
+                    <div class="top-museum">
+                        <h1>Natural History Museum</h1>
+                        <p>Nestled in the heart of Meteora, the Natural History Museum stands as a gateway to the rich
+                            tapestry of history and culture woven into the fabric of this mystical region. Stepping into
+                            its hallowed halls, visitors embark on a captivating journey through time.</p>
+                        <div class="button"><a href="#museum" class="btn btn-light">Read more</a></div>
+                    </div>
+                    
+                </div>
 
 
                 <div class="top2-heading">
@@ -120,10 +149,22 @@
                         </div>
                     </div>
                     <img src="images/moyseio-ellinikis-paideias.png">
-
                 </div>
 
-
+   <!-- duplicate for responsive mobile-->
+                <div class="top-heading2">
+                    <h2>Greek Education Museum</h2>
+                    <img src="images/moyseio-ellinikis-paideias.png">
+                    <div class="top-museum">
+                        <h1>Greek Education Museum</h1>
+                        <p>Through its curated collection, the Museum of Greek Education invites visitors to explore the
+                            pivotal role education has played in shaping Greek culture and society throughout the ages,
+                            providing valuable insights into the foundations of knowledge that have endured across
+                            generations.</p>
+                        <div class="button"><a href="#museum" class="btn btn-light">Read more</a></div>
+                    </div>
+                    
+                </div>
             </div>
 
             <!-- User Reviws -->
@@ -170,7 +211,7 @@
                         </div>
                     </div>
 
-                    <div class="pointer"><i class="fa-solid fa-angle-right"></i></div>
+                 <div class="pointer"><i class="fa-solid fa-angle-right"></i></div>
 
                 </div>
             </section>
@@ -208,7 +249,7 @@
                 </ul>
             </div>
 
-            <div class="text-info">
+            <div class="text-info social">
                 <h3>Social Media</h3>
                 <ul>
                     <li class="facebook"><i class="fa-brands fa-square-facebook"></i>Facebook</li>
@@ -217,7 +258,7 @@
                     <li class="whats-app"><i class="fa-brands fa-square-whatsapp"></i>Whats app</li>
                 </ul>
             </div>
-            <div class="text-info">
+            <div class="text-info support">
                 <h3>Support</h3>
                 <ul>
                     <a href="contact.html">

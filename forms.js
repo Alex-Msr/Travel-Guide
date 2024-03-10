@@ -1,46 +1,22 @@
-const email = document.getElementById('email');
-const confirmEmail = document.getElementById('confirm-email');
-/*const fullName = document.getElementById('name');
-const phoneNumber = document.getElementById('phonenumber');
-const streetAddress = document.getElementById('street-address');
-const city = document.getElementById('city');
-const region = document.getElementById('region');
-const postalCode = document.getElementById('postal-code');
-const message = document.getElementById('message');
-const country = document.getElementById ('select-box');*/
-const formInputs = form.querySelectorAll('input');
-form?.addEventListener('submit', handleSubmit);
-
+const form = document.querySelector("form");
+const email1 = document.querySelector("#email");
+const email2 = document.getElementById("confirm-email");
+form?.addEventListener("submit", handleSubmit);
 function handleSubmit(event) {
-  event.preventDefault();
 
-  let emailValue;
-  let confirmationEmailValue;
-
-  for (let i = 0; i < formInputs.length; i++) {
-    const formInput = formInputs[i]
-
-    if (formInputs.value.trim().length === 0) {
-      alert('Fields are missing')
-      formInputs.classList.add('on-input-error');
+    if (email1.value === email2.value) {
+        email2.style.backround = "transparent";
+        alert("Submission successful!")
+        document.getElementById("form").reset();
     }
-    console.log(formInputs);
-
-    if (formInput.id === 'email') {
-      emailValue = formInput.value
+    else {
+        const email1 = document.querySelector("#email");
+        const email2 = document.querySelector("#confirm-email");
+        event.preventDefault();
+        const confirmationEmailElement = form.querySelector('#confirm-email')
+        confirmationEmailElement.classList.add('on-input-error');
+        alert("Confirmation failed. Check email")
     }
-    if (formInput.id === 'confirm-email') {
-      confirmationEmailValue = formInput.value
-    }
-  }
-  console.warn({ emailValue, confirmationEmailValue });
-
-  if (emailValue !== confirmationEmailValue) {
-    const confirmationEmailElement = form.querySelector('#confirm-email')
-
-    confirmationEmailElement.classList.add('on-input-error-test');
-  }
-
 }
 
 function validateEmail(email) {
@@ -64,3 +40,5 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+

@@ -32,6 +32,9 @@ a {
 
 /*navbar*/
 
+.hamburger-menu{
+    display: none;
+}
 
 .home {
     border: 2px solid #304146;
@@ -58,7 +61,7 @@ a {
 }
 
 #navbar {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
     display: flex;
     flex-direction: row;
@@ -188,7 +191,7 @@ a {
     align-items: center;
     justify-content: center;
     padding-top: 30px;
-    margin-left: 200px;
+    margin-left: 500px;
     padding-bottom: 50px;
     background-color: white;
     width: 1000px;
@@ -292,6 +295,10 @@ a {
     padding-top: 10px;
     font-size: 1.2rem;
     line-height: 1.2em;
+}
+
+.top-heading2{
+    display: none;
 }
 
 .top-heading {
@@ -682,19 +689,17 @@ a {
 .flexbox-slideshow {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 0;
-    margin-left: 250px;
+    margin: 0 0 0 500px;
     width: 800px;
     margin-top: 60px;
     background-color: white;
 }
 
 .text-slideshow {
-    padding-top: 100px;
+    padding-top: 30px;
     padding-right: 50px;
-    width: 500px;
-    margin-left: 300px;
+    width: 450px;
+    margin-left: 100px;
 }
 
 i {
@@ -706,7 +711,7 @@ i {
 
 #indicator {
     text-align: center;
-    margin-left: 600px;
+    margin-left: 550px;
 }
 
 .dot {
@@ -735,8 +740,8 @@ i {
 }
 
 .timeline-intro img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     box-shadow: 0 0 15px #333;
 }
@@ -747,7 +752,7 @@ i {
     justify-content: space-evenly;
     width: 100%;
     margin-bottom: 100px;
-    margin-top: 50px
+    margin-top: 50px;
 }
 
 .timeline {
@@ -803,7 +808,7 @@ i {
 
 #first-timeline h3 {
     font-size: 4em;
-    width: 280px;
+    width: 250px;
     height: 600px;
     line-height: 2em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -811,13 +816,9 @@ i {
     text-align: center;
 }
 
-#first-timeline img {
-    width: 600px;
-    height: 600px;
-}
 
 .text-timeline {
-    width: 40%;
+    width: 50%;
     color: white;
     padding-right: 50px;
     background-color: #304146ba;
@@ -843,7 +844,7 @@ i {
 
 #second-timeline h3 {
     font-size: 4em;
-    width: 280px;
+    width: 250px;
     height: 600px;
     line-height: 2em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -868,7 +869,7 @@ i {
 
 #third-timeline h3 {
     font-size: 4em;
-    width: 280px;
+    width: 250px;
     height: 600px;
     line-height: 2em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -892,7 +893,7 @@ i {
 
 #fourth-timeline h3 {
     font-size: 4em;
-    width: 280px;
+    width: 250px;
     height: 600px;
     line-height: 2em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -936,8 +937,8 @@ i {
 }
 
 .flexbox-sights img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 50%;
     box-shadow: 0 0 15px #333;
 }
@@ -947,7 +948,7 @@ i {
     flex-direction: row;
     width: 80%;
     position: absolute;
-    top: 90%;
+    top: 60%;
     left: 10%;
 }
 
@@ -994,6 +995,7 @@ i {
     padding-top: 300px;
 }
 
+
 .first-grid {
     display: flex;
     flex-direction: row;
@@ -1035,6 +1037,7 @@ i {
     align-items: center;
     max-width: 40%;
     padding: 20px;
+    background-color: whitesmoke;
 }
 
 #first-monastery p {
@@ -1046,6 +1049,7 @@ i {
     background-color: white;
     box-shadow: 0 0 15px #333;
     cursor: pointer;
+    transition: all 0.5s ease-out;
 }
 
 #first-monastery:hover img {
@@ -1061,6 +1065,7 @@ i {
     align-items: center;
     max-width: 40%;
     padding: 20px;
+  background-color: whitesmoke;
 }
 
 .second-monastery p {
@@ -1072,6 +1077,7 @@ i {
     background-color: white;
     box-shadow: 0 0 15px #333;
     cursor: pointer;
+    transition: all 0.5s ease-out;
 }
 
 .second-monastery:hover img {
@@ -1087,6 +1093,7 @@ i {
     align-items: center;
     padding: 20px;
     max-width: 40%;
+    background-color: whitesmoke;
 }
 
 .third-monastery p {
@@ -1098,6 +1105,7 @@ i {
     background-color: white;
     box-shadow: 0 0 15px #333;
     cursor: pointer;
+    transition: all 0.5s ease-out;
 }
 
 .third-monastery:hover img {
@@ -1113,6 +1121,7 @@ i {
     align-items: center;
     max-width: 40%;
     padding: 20px;
+   background-color: whitesmoke;
 }
 
 .fourth-monastery p {
@@ -1124,6 +1133,7 @@ i {
     background-color: white;
     box-shadow: 0 0 15px #333;
     cursor: pointer;
+    transition: all 0.5s ease-out;
 }
 
 .fourth-monastery:hover img {
@@ -1140,6 +1150,8 @@ i {
     align-items: center;
     max-width: 40%;
     padding: 20px;
+    transition: all 1s ease-out;
+    background-color: whitesmoke;
 }
 
 .fifth-monastery p {
@@ -1151,6 +1163,7 @@ i {
     background-color: white;
     box-shadow: 0 0 15px #333;
     cursor: pointer;
+    transition: all 0.5s ease-out;
 }
 
 .fifth-monastery:hover img {
@@ -1166,6 +1179,7 @@ i {
     align-items: center;
     max-width: 40%;
     padding: 20px;
+    background-color: whitesmoke;
 }
 
 .sixth-monastery p {
@@ -1177,6 +1191,7 @@ i {
     background-color: white;
     box-shadow: 0 0 15px #333;
     cursor: pointer;
+    transition: all 0.5s ease-out;
 }
 
 .sixth-monastery:hover img {
@@ -1271,7 +1286,7 @@ i {
     width: 350px;
     height: 70px;
     text-align: center;
-    margin-top: 80px;
+    margin-top: 50px;
     font-size: 1.8em;
     font-family: Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
 }
@@ -1523,8 +1538,6 @@ i {
 }
 
 
-
-
 .big-box {
     padding-bottom: 200px;
 }
@@ -1667,7 +1680,8 @@ i {
 .contact-form {
     display: flex;
     flex-direction: column;
-    width: 450px;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-form input {
@@ -1687,7 +1701,7 @@ label {
 }
 
 .container-form {
-    max-width: 500px;
+    width: 600px;
     height: 850px;
     background-color: rgb(255, 255, 255);
     padding: 25px;
@@ -1831,3 +1845,7 @@ label {
 .accordion-item {
     padding: 20px 0 20px;
 }
+
+
+
+

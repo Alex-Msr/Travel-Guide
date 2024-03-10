@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/fc6b22f201.js" crossorigin="anonymous"></script>
     <script src="forms.js" defer></script>
-    <link rel="stylesheet" href="responcive.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--<link rel="stylesheet" href="css/responsive.css">-->
 </head>
 
 <body>
@@ -23,8 +24,22 @@
                 <a href="exhibits.html">Exhibits</a>
                 <a href="events.html">Events</a>
                 <div class="contact-item"><a href="contact.html">Contact</a></div>
-
             </div>
+               <!--for mobile use-->
+               <div class="hamburger-menu">
+                <input id="menutoggle" type="checkbox" />
+                <label class="menubtn" for="menutoggle">
+                  <span></span>
+                </label>
+        
+                <ul class="menubox">
+                  <li><a class="menuitem" href="index.html">Home</a></li>
+                  <li><a class="menuitem" href="history.html">History</a></li>
+                  <li><a class="menuitem" href="exhibits.html">Exhibits</a></li>
+                  <li><a class="menuitem" href="events.html">Events</a></li>
+                  <li><a class="menuitem" href="contact.html">Contact</a></li>
+                </ul>
+              </div>
         </nav>
         <h1 class="contact-tab">Contact</h1>
     </header>
@@ -87,25 +102,25 @@
                 <form action="#" class="contact-form" id="form">
                     <div class="input-type">
                         <label>Full Name:</label>
-                        <input type="text" id="name" placeholder="Full Name">
+                        <input type="text" id="name" placeholder="Full Name" required> 
                     </div>
                     <div class="input-type">
                         <label>Email:</label>
-                        <input type="email" id="email" placeholder="email@example.com">
+                        <input type="email" id="email" placeholder="email@example.com" required>
                     </div>
                     <div class="input-type">
                         <label>Confirm Email:</label>
-                        <input type="text" id="confirm-email" placeholder="Confirm Email">
+                        <input type="text" id="confirm-email" placeholder="Confirm Email" required>
                     </div>
 
                     <div class="input-type">
                         <label>Phone Number:</label>
-                        <input type="text" id="phonenumber" placeholder="Phone number">
+                        <input type="text" id="phonenumber" placeholder="Phone number" required>
                     </div>
 
                     <div class="input-type address">
                         <label>Street Address:</label>
-                        <input type="text" name="" id="street-address" placeholder="Enter Street address">
+                        <input type="text" name="" id="street-address" placeholder="Enter Street address" required>
                         <div class="address-details">
                             <div class="select-box" id="country">
                                 <select>
@@ -119,13 +134,13 @@
                                 </select>
                             </div>
                             <label>City:</label>
-                            <input type="text" name="" id="city" placeholder="Enter your city">
+                            <input type="text" name="" id="city" placeholder="Enter your city" required>
                         </div>
                         <div class="address-details">
                             <lable class="region">Region:</lable>
-                            <input type="text" name="" id="region" placeholder="Enter your region">
+                            <input type="text" name="" id="region" placeholder="Enter your region" required>
                             <label>P/C:</label>
-                            <input type="text" name="" id="postal-code" placeholder="Enter your postal code">
+                            <input type="text" name="" id="postal-code" placeholder="Enter your postal code"required>
                         </div>
 
                         <div class="input-type">
@@ -208,7 +223,7 @@
                 </ul>
             </div>
 
-            <div class="text-info">
+            <div class="text-info social">
                 <h3>Social Media</h3>
                 <ul>
                     <li class="facebook"><i class="fa-brands fa-square-facebook"></i>Facebook</li>
@@ -217,7 +232,7 @@
                     <li class="whats-app"><i class="fa-brands fa-square-whatsapp"></i>Whats app</li>
                 </ul>
             </div>
-            <div class="text-info">
+            <div class="text-info support">
                 <h3>Support</h3>
                 <ul>
                     <a href="contact.html">
