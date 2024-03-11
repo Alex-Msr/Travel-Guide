@@ -6,12 +6,11 @@ form?.addEventListener("submit", handleSubmit);
 function handleSubmit(event) {
 
     if (email1.value === email2.value) {
-        email2.style.backround = "transparent";
+        email2.style.background = "transparent";
         alert("Submission successful!")
         document.getElementById("form").reset();
     }
     else {
-        const email1 = document.querySelector("#email");
         const email2 = document.querySelector("#confirm-email");
         event.preventDefault();
         email2.classList.add('on-input-error');

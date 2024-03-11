@@ -69,7 +69,7 @@ a {
     align-items: center;
     width: 100%;
     height: 60px;
-    padding-left: 200px;
+    padding-left: 280px;
 }
 
 #navbar #icon {
@@ -275,7 +275,6 @@ a {
     background-color: white;
     width: 350px;
     height: 670px;
-    /*box-shadow: 0 0 15px #333;*/
 }
 
 .text-story {
@@ -315,8 +314,8 @@ a {
     bottom: 60px;
     left: 25%;
     transform: translateX(-50%);
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     box-shadow: 0 0 15px #333;
     transition: all 0.5s;
     cursor: pointer;
@@ -367,8 +366,8 @@ a {
     bottom: 60px;
     right: 25%;
     transform: translateX(50%);
-    height: 400px;
-    width: 400px;
+    height: 500px;
+    width: 500px;
     box-shadow: 0 0 15px #333;
     transition: all 0.5s;
     cursor: pointer;
@@ -698,7 +697,7 @@ a {
 .text-slideshow {
     padding-top: 30px;
     padding-right: 50px;
-    width: 450px;
+    width: 400px;
     margin-left: 100px;
 }
 
@@ -1432,6 +1431,14 @@ i {
     justify-content: center;
     align-items: center;
     padding-left: 150px;
+    padding-bottom: 30px;
+}
+.box-event2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 260px;
     padding-bottom: 30px;
 }
 
