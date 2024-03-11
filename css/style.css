@@ -688,7 +688,7 @@ a {
 .flexbox-slideshow {
     display: flex;
     align-items: center;
-    margin: 0 0 0 500px;
+    margin: 0 0 0 350px;
     width: 800px;
     margin-top: 60px;
     background-color: white;
@@ -947,7 +947,7 @@ i {
     flex-direction: row;
     width: 80%;
     position: absolute;
-    top: 60%;
+    top: 80%;
     left: 10%;
 }
 
@@ -1438,7 +1438,7 @@ i {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-left: 260px;
+    padding-left: 150px;
     padding-bottom: 30px;
 }
 
